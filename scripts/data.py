@@ -7,7 +7,7 @@ import pickle
 
 x_train = x_train / 255.0
 x_test = x_test / 255.0
-y_train = keras.utils.to_categorical(y_train,num_classes=10)
-y_test = keras.utils.to_categorical(y_test,num_classes=10)
+y_train = to_categorical(y_train,num_classes=10)
+y_test = to_categorical(y_test,num_classes=10)
 pickle.dump(obj=(x_train,y_train),file=open('data/processed/train_data.pkl', 'wb'))
 pickle.dump(obj=(x_test,y_test),file=open('data/processed/test_data.pkl', 'wb'))
