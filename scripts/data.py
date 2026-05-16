@@ -4,7 +4,7 @@ from keras.datasets import cifar10
 import numpy as np
 import pickle
 
-os.chdir('/content/NN-Project3')
+print(os.getcwd())
 (x_train, y_train), (x_test,y_test) = cifar10.load_data()
 
 x_train = x_train / 255.0
